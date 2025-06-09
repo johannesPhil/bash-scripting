@@ -1,12 +1,12 @@
 #!/bin/bash
 if [ -z "$1" ]; then
-  echo "Usage: $0 <filename>"
+  echo "File name not supplied. Usage: $0 <filename>"
   exit 1
 fi
 
-file_name=$1
+file_name="$1"
 
-echo "Searching for $filename"
+echo "Searching for $filename..."
 
 found=$(find . -type f -name "$filename")
 
